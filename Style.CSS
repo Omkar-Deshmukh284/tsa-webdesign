@@ -1,0 +1,52 @@
+body {
+    background: #000033 url('galaxy-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;  } 
+
+.taskbar {    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        width: 100%;
+}
+    
+.taskbar img {
+    height: 46.7px;
+    float: left;
+}
+
+.taskbar li {
+        float: left;
+        list-style-type: none;
+      }
+      
+.taskbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+.taskbar li a:hover {
+        background-color: #8590f3;
+      }
+
+.heading {
+    text-align: center;
+    color:aquamarine;
+    border: white;
+    width: 100%;
+}
+
+.intro {
+    display: inline-block;
+    width: 100%; 
+    height: auto;
+    float: center;
+}
