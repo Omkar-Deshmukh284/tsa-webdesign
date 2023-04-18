@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <link href="Style.CSS" rel="stylesheet">
-  <title>SPMS Website Design Team</title>
+  <title>SPMS Website Design Team Landing Page</title>
 </head>
 <body>
   <header>
     <nav class="taskbar">
         <ul>
             <img src="logo.jpg">
-            <li><a href="#">Home</a></li> 
-            <li><a href="#">Cartoon Shows</a></li>
-            <li><a href="#">Characters</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="showtimes.html">Show Times</a> </li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
-    <h1 class="heading">The Glexplorers</h1>
+    <h1 class="heading">Journey to the galaxy</h1>
   </header>
 
-  <main>
-   <video class="intro" controls>
+  <main> 
+   <video id='intro-video' class="intro" controls autoplay muted>
         <source src="glexplorers-intro-final.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <script>
+      document.getElementById('intro-video').play();
+    </script>
+    <img class="main-page-picture" src="main-page-picture.png"/>
+    <footer>
+      <div class="footer">
+        <p>&copy 2023 SPMS Website Design Team. All rights reserved.</p>
+      </div>
+    </footer>
   </main>
 
-  <footer>
-    <p class="footer">&copy 2023 SPMS Website Design Team. All rights reserved.</p>
-  </footer>
 </body>
 </html>
 
