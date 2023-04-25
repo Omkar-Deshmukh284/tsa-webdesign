@@ -38,8 +38,15 @@ body {
       
 .taskbar li a:hover {
         background-color: #8590f3;
-      }
+}
 
+.logo_button {
+    padding:0%;
+    margin-left:0%;
+    margin-right: 0%;
+    width:50%;
+    height: 50%;
+}
 .heading {
     text-align: center;
     color:rgb(117, 133, 255);
@@ -62,21 +69,53 @@ body {
 .main-page-picture {
     display: inline-block;
     width: 35%; 
-    margin-left: 20%;
+    margin-left: 15.5%;
     padding-left: 20px;
     padding-top: 20px;
 }
 
 .main-page-text {
     display: inline;
-    width: 30%;
-    margin-right: 10%;
+    width: 28%;
+    padding-right: 10%;
     float: right;
     height: auto;
     padding-top: 50px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: bold;
+    color: white;
+}
+
+.game-text {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    float: center;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.button-style {
+    font: bold;
+    background-color: rgb(174, 174, 238);
+    color: white;
+    font-size: 15px;
+}
+.spaceship {width:50px;
+    height:50px;
+    border-radius:50%;
+    display:inline-block;}
+
+.result {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
     color: white;
 }
 
@@ -85,4 +124,23 @@ body {
     font-size: large;
     font-weight: bold;
     color: white;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.gameborder{
+    display: inline-block;
+    width: 65%; 
+    margin-left: 17%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 20px;
+}
+
+#game{
+    padding-left: 35%;
+    float:center;
+    border: dotted;
+    border-color:#8590f3;
+    border-width: 5px;
+
 }

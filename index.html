@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="fotor_2023-4-17_22_53_59.jpg">
+  <link rel="icon" type="image/x-icon" href="Logo2.png">
   <meta charset="UTF-8">
   <link href="Style.CSS" rel="stylesheet">
   <title>Journey To The Galaxy Official Website</title>
@@ -10,11 +10,11 @@
   <header>
     <nav class="taskbar">
         <ul>
-            <img src="logo.jpg">
-            <li><a href="index.html">Home</a></li> 
+            <img src="Logo2.png">
+            <li><a href="index.html">Home</a></li>
             <li><a href="showtimes.html">Show Times</a> </li>
             <li><a href="characters.html">Characters</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="story.html">About</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
@@ -33,6 +33,55 @@
       <img class="main-page-picture" src="main-page-picture.png"/>
       <p class="main-page-text">Watch the thrilling adventures of Sam and Leia as they build a spaceship and explore our galaxy!</p>
     </div>
+      <div class="gameborder">
+        <div id="game">
+          <h1 class="game-text">Lets play a game!</h4>
+          <h2 class="game-text"> Count the spaceships! </h3>
+        <div id = "gameBox" style="display:inline;"></div><br><br>
+          <form id="spaceshipCount" autocomplete="off">
+            <label for="answer" class="game-text">What do you think?</label><br>
+            <input type="text" id="answer" style="float: left;"><br><br>
+            <input type="button" value="Check your answer" class="button-style" onclick="showResults()">
+            <input type="button" value="Try again" class="button-style" onclick="location.reload();"><br><br>
+          </form>
+          <div id ="displayResult" align-items="left">
+            <p id="result" class="game-text"></p>
+          </div>
+        </div>
+       </div>
+    <script>
+      window.onload = function() { 
+        //var cnt = document.getElementById("beadBox").childElementCount;
+        var numberOfSpaceships = parseInt(Math.random() * 10) + 1;
+        //console.log(numberOfBeads);
+        for (var cnt = 0; cnt < numberOfSpaceships; cnt++) {
+          var spaceship = document.createElement("img");                       // Create a spaceship image element
+                      spaceship.setAttribute("src", "spaceship.png")           //add image source
+          spaceship.setAttribute("class", "spaceship");                             //set styling attributes
+          document.getElementById("gameBox").appendChild(spaceship);           //add image to the screen
+        }
+        document.getElementById("answer").focus(); 
+          } 
+    
+      
+        function showResults() {
+          var cnt, ans, text;
+         
+          // Get the value of the answer field
+          ans= document.getElementById("answer").value;
+
+          cnt = document.getElementById("gameBox").childElementCount;
+        if (ans == cnt){
+            text = "Amazing! Try again?";
+        }
+          else {
+              text = "Hmm! Not quite. Give it another try."
+          }
+          
+            document.getElementById("result").innerHTML = text;
+            document.getElementById("spaceshipCount").reset();
+        }
+    </script>
     <footer>
       <div class="footer">
         <p>&copy 2023 SPMS Website Design Team. All rights reserved.</p>
