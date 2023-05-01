@@ -1,0 +1,19 @@
+ .paragraph_name {
+    float: center;
+    padding-left: 5%; 
+    color:aliceblue;
+    line-height: 150% ; 
+    margin-top: auto;
+    font-family: "Lucida Console", "Courier New", monospace;
+} 
+.spaceship_place {
+    padding-left: 5%; 
+    padding-bottom: 40%; 
+    padding-right: 20%;
+    padding-top: 10%;
+    display: inline;
+    width: 60%;
+    height: 60%;
+    margin-top: auto;
+    margin-left: 15.5%;
+}

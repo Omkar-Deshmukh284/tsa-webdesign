@@ -9,21 +9,21 @@
 <body>
   <header>
     <nav class="taskbar">
-        <ul>
-            <img src="Logo2.png">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="showtimes.html">Show Times</a> </li>
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="story.html">About</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
+      <ul>
+        <img src="Logo2.png">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showtimes.html">Show Times</a> </li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
     </nav>
     <h1 class="heading">Journey To The Galaxy</h1>
   </header>
 
   <main> 
    <video id='intro-video' class="intro" controls autoplay muted>
-        <source src="glexplorers-intro-final.mp4" type="video/mp4">
+        <source src="Across The Universe.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <script>
@@ -51,16 +51,15 @@
        </div>
     <script>
       window.onload = function() { 
-        //var cnt = document.getElementById("beadBox").childElementCount;
+        //var cnt = document.getElementById("gameBox").childElementCount;
         var numberOfSpaceships = parseInt(Math.random() * 5) + 1;
-        //console.log(numberOfBeads);
         for (var cnt = 0; cnt < numberOfSpaceships; cnt++) {
           var spaceship = document.createElement("img");                       // Create a spaceship image element
                       spaceship.setAttribute("src", "spaceship.png")           //add image source
           spaceship.setAttribute("class", "spaceship");                             //set styling attributes
           document.getElementById("gameBox").appendChild(spaceship);           //add image to the screen
         }
-        document.getElementById("answer").focus(); 
+        //document.getElementById("answer").focus();
           } 
     
       
@@ -72,7 +71,7 @@
 
           cnt = document.getElementById("gameBox").childElementCount;
         if (ans == cnt){
-            text = "Amazing! Try again?";
+            text = "Amazing! Play again?";
         }
           else {
               text = "Hmm! Not quite. Give it another try."
@@ -80,6 +79,10 @@
           
             document.getElementById("result").innerHTML = text;
             document.getElementById("spaceshipCount").reset();
+        }
+
+        function changeFocus() {
+          document.getElementById("intro-video").focus();
         }
     </script>
     <footer>
